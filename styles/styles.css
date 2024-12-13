@@ -1,0 +1,703 @@
+/************************************************************************************************************************************/
+
+:root {
+  --foundation-blue: #001538;
+  --momentum-white: #EEEEEE;
+  --ebb-cyan: #3BB0D4;
+  --flow-purple: #5651ED;
+  --sunrise-gold: #F7C95E;
+  --sunset-gold: #F09F26;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--foundation-blue);
+  color: var(--momentum-white);
+  transition: background-color 0.3s ease;
+}
+
+header {
+  font-family: "Monda", sans-serif;
+  background-color: #0A1E40;
+  color: var(--foundation-blue);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  color:#3BB0D4;
+  margin: 0;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+header h1:hover{
+  color: white;
+}
+
+nav {
+  background-color: var(--flow-purple);
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+}
+
+nav button {
+  background-color: transparent;
+  color: var(--sunrise-gold);
+  background-color:#5651ED;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+
+nav button:hover {
+  background-color: white;
+  color: var(--sunset-gold);
+  text-decoration: none;
+}
+
+main button {
+  background-color: var(--flow-purple);
+  color: var(--sunrise-gold);
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main button:hover {
+  background-color: var(--ebb-cyan);
+  color: var(--foundation-blue);
+  text-decoration: none;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 100vw;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+}
+
+article {
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 100;
+  color: white;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 64vh;
+  max-width: 100vw;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+}
+
+#inicios {
+  background-image: url(../images/Fnatic.jpeg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  padding-top: 7vh;
+  padding-left: 3vw;
+  font-size: 150%;
+  position: relative;
+  z-index: 0;
+  text-shadow: (0 0 1vw black);
+}
+
+#nopegao {
+  padding: 20px;
+  position: relative;
+  z-index: 0;
+}
+
+#fondo {
+  height: 75vh;
+  width: 96vw;
+  background-image: url(../images/mixwell.png);
+  background-position: 27%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 7vh;
+  padding-left: 3vw;
+  font-size: 150%;
+  z-index: 0;
+}
+
+#videop {
+  height: 70vh;
+  width: 96vw;
+  background-image: url(../images/ezgif-2-43f4cf2a62.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 7vh;
+  padding-left: 3vw;
+  filter: drop-shadow(2px 2px 10px black);
+}
+
+#dual {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+#dual .contenedor {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#dual article {
+  height: 45vh;
+  width: 35vw;
+  margin: 1vw;
+  margin-top: 1vh;
+  margin-bottom: 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#primero {
+  background-image: url(../images/LeagueofLegends_Worlds2022_ChaseCenter_California_Stage.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 120%;
+  background-position: center;
+}
+
+#segundo {
+  background-image: url(../images/CASE.jpeg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 120%;
+  background-position: center;
+}
+
+#tercero {
+  background-image: url(../images/2024_T1_Summer.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 120%;
+  background-position: center;
+}
+
+#cuarto {
+  background-image: url(../images/kaquka.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 100%;
+  background-position: center;
+}
+
+/************************************************************************************************************************************/
+
+#ArticulosDePrensa {
+  font-family: "DM Sans", sans-serif;
+  max-width: 80vw;
+  margin: 5vh auto;
+  padding: 5vh;
+  background-color: #0A1E40;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#ArticulosDePrensa  h1 {
+  padding-top: 1vh;
+  font-style: oblique;
+  margin-top: 0;
+  color: #F09F26;
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.tableroIZDE {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tableroIZDE article {
+  color: White;
+  width: 60vw;
+  margin: 5vh;
+  padding: 5vh;
+  padding-top: 0;
+  background-color: #001538;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+}
+
+.tableroIZDE article h2 {
+  color: #F09F26;;
+}
+
+.articulos article.izquierda {
+  padding-top: 10vh;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.articulos article.derecha {
+  padding-top: 10vh;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tableroIZDE article.derecha {
+  padding-top: 5vh;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableroIZDE article.izquierda {
+  padding-top: 5vh;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.espacio-foto{
+  margin: auto;
+  height: 30vh;
+  background-color: white;
+  margin: 5vh 0; 
+}
+
+/************************************************************************************************************************************/
+
+#jugadas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#jugadas article {
+  font-family: "DM Sans", sans-serif;
+  color: White;
+  width: 70vw;
+  height: 80vh;
+  margin: 5vh;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  background-color: #0A1E40;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+#jugadas article h2 {
+  margin-top: 0;
+  color: var(--sunrise-gold);
+  font-size: 2vw;
+}
+
+.jugadas-articles article {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/************************************************************************************************************************************/
+
+#Esapañaleyendas {
+  font-family: "DM Sans", sans-serif;
+  width: 80vw;
+  margin: 5vh auto;
+  padding: 5vh;
+  background-color: #0A1E40;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+}
+
+#Esapañaleyendas  h1 {
+  font-style: oblique;
+  margin-top: 0;
+  color: var(--sunset-gold);
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.tableroLeyendas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.tableroLeyendas article {
+  color: White;
+  width: 60vw;
+  height: 70vh;
+  margin: 5vh;
+  padding: 5vh;
+  padding-top: 0;
+  background-color: #001538;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.tableroLeyendas article h2 {
+  padding-top: 1vh ;
+  margin-top: 0;
+  color: var(--sunrise-gold);
+  font-size: 2vw;
+}
+
+.espacio-foto{
+  margin: auto;
+  height: 35vh;
+  background-color: white;
+  margin: 5vh 0;
+}
+/************************************************************************************************************************************/
+
+#formulario {
+  background-color: #5651ED;
+  padding: 20px;
+  border: 1px solid var(--foundation-blue);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  max-width: 500px;
+}
+
+#formulario h2 {
+  padding-top: 5vh;
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--ebb-cyan);
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+#registro {
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+#registro label {
+  margin-bottom: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+#registro input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid var(--foundation-blue);
+  border-radius: 5px;
+  background-color: var(--momentum-white);
+  font-size: 14px;
+}
+
+#registro input[type="submit"] {
+  background-color: var(--sunrise-gold);
+  color: var(--foundation-blue);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#registro input[type="submit"]:hover {
+  background-color: var(--sunset-gold);
+}
+/************************************************************************************************************************************/
+
+footer {
+  width: 100%;
+  background-color: var(--ebb-cyan);
+  color: var(--foundation-blue);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Responsive*/
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  header {
+    padding: 15px;
+  }
+  header h1 {
+    font-size: 3vw;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav li {
+    margin-bottom: 15px;
+  }
+  main {
+    margin: 0 auto;
+    max-width: 95vw;
+  }
+  article {
+    width: 95vw;
+    height: 55vh;
+    margin-bottom: 25px;
+  }
+  #inicios {
+    padding-top: 5vh;
+    padding-left: 2vw;
+  }
+  #fondo {
+    height: 65vh;
+    width: 95vw;
+    background-position: 20%;
+  }
+  #videop {
+    height: 65vh;
+    width: 95vw;
+  }
+  #dual {
+    flex-direction: column;
+    align-items: center;
+  }
+  #dual article {
+    width: 95vw;
+    height: 45vh;
+    margin-bottom: 25px;
+  }
+  #ArticulosDePrensa {
+    max-width: 95vw;
+    margin: 5vh auto;
+    padding: 5vh;
+  }
+  #ArticulosDePrensa h1 {
+    font-size: 2.5vw;
+  }
+  .tableroIZDE {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tableroIZDE article {
+    width: 95vw;
+    margin-bottom: 25px;
+  }
+  #jugadas {
+    flex-direction: column;
+    align-items: center;
+  }
+  #jugadas article {
+    width: 95vw;
+    height: 55vh;
+    margin-bottom: 25px;
+  }
+  #Esapañaleyendas {
+    width: 95vw;
+    margin: 5vh auto;
+    padding: 5vh;
+  }
+  #Esapañaleyendas h1 {
+    font-size: 2.5vw;
+  }
+  .tableroLeyendas {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tableroLeyendas article {
+    width: 95vw;
+    margin-bottom: 25px;
+  }
+  #formulario {
+    width: 95vw;
+    height: 70vh;
+    padding: 15px;
+  }
+  footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  header {
+    padding: 10px;
+  }
+  header h1 {
+    font-size: 2vw;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav li {
+    margin-bottom: 10px;
+  }
+  main {
+    margin: 0 auto;
+    max-width: 98vw;
+  }
+  article {
+    width: 98vw;
+    height: 50vh;
+    margin-bottom: 20px;
+  }
+  #inicios {
+    padding-top: 3vh;
+    padding-left: 1vw;
+  }
+  #fondo {
+    height: 55vh;
+    width: 98vw;
+    background-position: 15%;
+  }
+  #videop {
+    height: 55vh;
+    width: 98vw;
+  }
+  #dual {
+    flex-direction: column;
+    align-items: center;
+  }
+  #dual article {
+    width: 98vw;
+    height: 40vh;
+    margin-bottom: 20px;
+  }
+  #ArticulosDePrensa {
+    max-width: 98vw;
+    margin: 3vh auto;
+    padding: 3vh;
+  }
+  #ArticulosDePrensa h1 {
+    font-size: 2vw;
+  }
+  .tableroIZDE {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tableroIZDE article {
+    width: 98vw;
+    margin-bottom: 20px;
+  }
+  #jugadas {
+    flex-direction: column;
+    align-items: center;
+  }
+  #jugadas article {
+    width: 98vw;
+    height: 50vh;
+    margin-bottom: 20px;
+  }
+  #Esapañaleyendas {
+    width: 98vw;
+    margin: 3vh auto;
+    padding: 3vh;
+  }
+  #Esapañaleyendas h1 {
+    font-size: 2vw;
+  }
+  .tableroLeyendas {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tableroLeyendas article {
+    width: 98vw;
+    margin-bottom: 20px;
+  }
+  #formulario {
+    width: 98vw;
+    height: 65vh;
+    padding: 10px;
+  }
+  footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

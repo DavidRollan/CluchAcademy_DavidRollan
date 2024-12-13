@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/styles.css"/>
+        <title> ~ CLUCH ACADEMY ~ </title>
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html">ϟ CLUTCH ACADEMY ϟ</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="historia.html"><button>NUESTRA HISTORIA</button></a></li>
+                        <li><a href="leyendas.html"><button>LEYENDAS</button></a></li>
+                        <li><a href="jugadas.html"><button>MOMENTOS LEGENDARIOS</button></a></li>
+                        <li><a href="formularios.html"><button>CONTACTOS</button></a></li>
+                        <li><a href="https://www.vlr.gg"><button>COMPETICIONES</button></a></li>
+                    </ul>
+                </nav>
+            </header>
+        <section id="formulario">
+            <h2>Registro en Clutch Academy</h2>
+            <form id="registro" action="enviar.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]{3,20}">
+            <br><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]{3,20}">
+            <br><br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            <br><br>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
+            <br><br>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required min="18" max="100">
+            <br><br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{8,12}">
+            <br><br>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required pattern="[a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ\s,.-]{5,50}">
+            <br><br>
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]{3,20}">
+            <br><br>
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]{3,20}">
+            <br><br>
+            <label for="codigo_postal">Código postal:</label>
+            <input type="text" id="codigo_postal" name="codigo_postal" required pattern="[0-9]{4,10}">
+            <br><br>
+            <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </body>
+</html>
+
+
